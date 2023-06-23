@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="speedtrack" class="speedtrack">
+        <p id="speed">0</p>
+        <p id="speedunit">mph</p>
+        <a id="button"></a>
+    </div>
+    <div id="counter" class="counter">
+        <p id="strikes">0</p>
+        <p id="balls">0</p>
+        <a onclick="increaseStrike()"><button>Strike</button></a>
+        <a><button>Balls</button></a>
+    </div>
+    <script>
+        function increaseStrike() {
+            var strike = document.getElementById("strikes");
+            var strikeCount = parseInt(strike.innerHTML);
+            strikeCount++;
+            strike.innerHTML = strikeCount;
+        }
+    </script>
+</body>
+</html>
