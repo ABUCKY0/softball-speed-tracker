@@ -1,0 +1,39 @@
+.buttons {
+    align-items: center;
+    min-width: 1vh;
+}
+html {
+    font-size: 1vw;
+}
+.speed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    height: 33vw;
+    border: 1px solid black;
+    margin: 10px;
+    text-align:center;
+}
+.speedtrack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.bas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    height: 33vw;
+    border: 1px solid black;
+    margin: 10px;
+    text-align:center;
+}
+.boxtop .boxbottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
