@@ -4,33 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        .buttons {
-            align-items: center;
-            min-width: 1vh;
-        }
-    </style>
-    
+    <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
-    <div id="speedtrack" class="speedtrack">
-        <a id="speedmph" class="speed">0 Miles per Hour</a><br>
-        <a id="speedfps" class="speed">0 Feet per Second</a><br>
-        <a id="holdtime" class="speed">Held for 0 Seconds</a><br>
-        <button id="myButton" class="myButton">Click Me</button>
-
-    </div>
     <div id="counter" class="counter">
-        <p id="strikes">0</p>
-        <p id="balls">0</p>
+        <p id="strikes" class="bas">0</p>
+        <p id="balls" class="bas">0</p>
         <div class="buttons">
-            <a onclick="increaseStrike()"><button>+</button></a>
-            <a onclick="decreaseStrike()"><button>-</button></a>
-            <a onclick="increaseBalls()"><button>+</button></a>
-            <a onclick="decreaseBalls()"><button>-</button></a>
+            <div class="SBControl">
+                <a onclick="increaseStrike()" class="sbctrlbtn"><button>+</button></a>
+                <a onclick="decreaseStrike()" class="sbctrlbtn"><button>-</button></a>
+                <a onclick="increaseBalls()" class="sbctrlbtn"><button>+</button></a>
+                <a onclick="decreaseBalls()" class="sbctrlbtn"><button>-</button></a>
+            </div>
+            <button id="myButton" class="myButton">Click Me</button>
         </div>
     </div>
+    <div id="speedtrack" class="speedtrack">
+        <div id="boxtop" class="boxtop">
+            <a id="speedmph" class="speed">0 mph</a>
+            <a id="speedfps" class="speed">0 Feet per Second</a>.
+        </div>
+        <div id="boxbottom" class="boxbottom">
+            <a id="holdtime" class="speed">Held for 0 Seconds</a>
+            <a id="distance" class="speed">40 Feet</a><br>
+        </div>
+    </div>
+
+
     <script>
         function increaseStrike() {
             var strike = document.getElementById("strikes");

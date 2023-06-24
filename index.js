@@ -14,7 +14,7 @@ button.addEventListener("mouseup", function() {
     console.log("Button held down for " + holdTime/1000 + " seconds");
     console.log("FPS: " + 40/(holdTime/1000));
     console.log("MPH: " + (40/(holdTime/1000))*0.681818);
-    speedmph.innerHTML = ((40/(holdTime/1000))*0.681818).toFixed(2) + " MPH";
-    speedfps.innerHTML = (40/(holdTime/1000)).toFixed(2) + " FPS";
-    timeheld.innerHTML = (holdTime/1000).toFixed(2) + " Seconds";
+    speedmph.innerHTML = ((40/(holdTime/1000))*0.681818).toFixed(2) + " mph";
+    speedfps.innerHTML = (40/(holdTime/1000)).toFixed(2) + " Feet per Second";
+    timeheld.innerHTML = "Held for " + (holdTime/1000).toFixed(2) + " Seconds";
 });
