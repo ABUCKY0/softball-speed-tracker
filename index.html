@@ -32,40 +32,6 @@
             <a id="distance" class="speed">40 Feet</a><br>
         </div>
     </div>
-
-
-    <script>
-        function increaseStrike() {
-            var strike = document.getElementById("strikes");
-            var strikeCount = parseInt(strike.innerHTML);
-            strikeCount++;
-            strike.innerHTML = strikeCount;
-        }
-        function decreaseStrike() {
-            var strike = document.getElementById("strikes");
-            var strikeCount = parseInt(strike.innerHTML);
-            if (strikeCount > 0) {
-                strikeCount--;
-            }
-            strike.innerHTML = strikeCount;
-        }
-        function increaseBalls() {
-            var ball = document.getElementById("balls");
-            var ballCount = parseInt(ball.innerHTML);
-            ballCount++;
-            ball.innerHTML = ballCount;
-        }
-        function decreaseBalls() {
-            var ball = document.getElementById("balls");
-            var ballCount = parseInt(ball.innerHTML);
-            if (ballCount > 0) {
-                ballCount--;
-            }
-            ball.innerHTML = ballCount;
-        }
-
-
-    </script>
     <script src="index.js"></script>
 </body>
 
