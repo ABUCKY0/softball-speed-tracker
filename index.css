@@ -1,39 +1,84 @@
-.buttons {
-    align-items: center;
-    min-width: 1vh;
+html{
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+    font-size: 5vw;
 }
-html {
-    font-size: 1vw;
-}
-.speed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33vw;
-    height: 33vw;
-    border: 1px solid black;
-    margin: 10px;
-    text-align:center;
-}
-.speedtrack {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+.speedbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     width: 100%;
+    max-width: calc(100% - 30px);
+    height: 100%;
 }
-.bas {
+
+.speedboxitem1 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-justify: middle;
+    min-height: 20vw;
+    
+}
+
+.speedboxitem2 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    min-height: 20vw;
+}
+
+.speedboxitem3 {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    min-height: 20vw;
+}
+
+.speedboxitem4 {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    min-height: 20vw;
+}
+
+.myButton {
+    grid-area: 4 / 1 / 5 / 3;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    min-height: 35vw;
+}
+
+.inbox {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33vw;
-    height: 33vw;
     border: 1px solid black;
-    margin: 10px;
-    text-align:center;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: Helvetica;
 }
-.boxtop .boxbottom {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+
+.strikeitem { 
+    grid-area: 1 / 1 / 2 / 2; 
+    min-height: 20vw;
+}
+.ballitem { 
+    grid-area: 1 / 2 / 2 / 3; 
+    min-height: 20vw;
 }

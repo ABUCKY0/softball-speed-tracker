@@ -5,11 +5,11 @@ let speedfps = document.getElementById("speedfps");
 let timeheld = document.getElementById("holdtime");
 
 
-button.addEventListener("mousedown", function() {
+button.addEventListener("touchstart", function() {
   holdStartTime = Date.now();
 });
 
-button.addEventListener("mouseup", function() {
+button.addEventListener("touchend", function() {
     let holdTime = Date.now() - holdStartTime;
     console.log("Button held down for " + holdTime/1000 + " seconds");
     console.log("FPS: " + 40/(holdTime/1000));

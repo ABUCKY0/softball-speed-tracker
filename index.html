@@ -9,30 +9,32 @@
 </head>
 
 <body>
-    <div id="counter" class="counter">
-        <p id="strikes" class="bas">0</p>
-        <p id="balls" class="bas">0</p>
-        <div class="buttons">
-            <div class="SBControl">
-                <a onclick="increaseStrike()" class="sbctrlbtn"><button>+</button></a>
-                <a onclick="decreaseStrike()" class="sbctrlbtn"><button>-</button></a>
-                <a onclick="increaseBalls()" class="sbctrlbtn"><button>+</button></a>
-                <a onclick="decreaseBalls()" class="sbctrlbtn"><button>-</button></a>
+
+        <div id="speedtrack" class="speedbox">
+            <div id="strikediv" class="sbcounter strikeitem">
+                <p id="strikes">0</p>
+                <div class="SBControl">
+                    <a onclick="increaseStrike()" class="sbctrlbtn"><button>+</button></a>
+                    <a onclick="decreaseStrike()" class="sbctrlbtn"><button>-</button></a>
+                </div>
             </div>
-            <button id="myButton" class="myButton">Click Me</button>
+            <div id="balldiv" class="sbcounter ballitem">
+                <p id="balls">0</p>
+                <div class="buttons">
+                    <div class="SBControl">
+                        <a onclick="increaseBalls()" class="sbctrlbtn"><button>+</button></a>
+                        <a onclick="decreaseBalls()" class="sbctrlbtn"><button>-</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="inbox speedboxitem1"><a id="speedmph" class="speedboxtext">0 mph</a></div>
+            <div class="inbox speedboxitem2"><a id="speedfps" class="speedboxtext">0 Feet per Second</a></div>
+            <div class="inbox speedboxitem3"><a id="holdtime" class="speedboxtext">Held for 0 Seconds</a></div>
+            <div class="inbox speedboxitem4"><a id="distance" class="speedboxtext">40 Feet</a></div>
+            <div id="myButton" class="inbox myButton"><a class="speedboxtext">Click Me</a></div>
+
         </div>
-    </div>
-    <div id="speedtrack" class="speedtrack">
-        <div id="boxtop" class="boxtop">
-            <a id="speedmph" class="speed">0 mph</a>
-            <a id="speedfps" class="speed">0 Feet per Second</a>.
-        </div>
-        <div id="boxbottom" class="boxbottom">
-            <a id="holdtime" class="speed">Held for 0 Seconds</a>
-            <a id="distance" class="speed">40 Feet</a><br>
-        </div>
-    </div>
-    <script src="index.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
